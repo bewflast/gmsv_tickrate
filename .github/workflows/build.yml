@@ -33,16 +33,6 @@ jobs:
         name: gmsv_tickrate_win32.dll
         path: projects/windows/vs2019/x86/Release/gmsv_tickrate_win32.dll
     
-    - name: Build 64
-      run: |
-        cd projects/windows/vs2019
-        & "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\msbuild.exe" /p:Configuration=Release /p:Platform=x64 tickrate.sln
-    
-    - uses: actions/upload-artifact@v3
-      with:
-        name: gmsv_tickrate_win64.dll
-        path: projects/windows/vs2019/x86_64/Release/gmsv_tickrate_win64.dll
-        
         
         
   build-linux:
@@ -70,16 +60,11 @@ jobs:
       run: |
         cd projects/linux/gmake
         make
-        make config=release_x86_64
-      
+        
     - uses: actions/upload-artifact@v3
       with:
         name: gmsv_tickrate_linux.dll
-        path: projects/linux/gmake/x86/Release/gmsv_tickrate_linux.dll
+        path: projects/linux/gmake/x86/ReleaseWithSymbols/gmsv_tickrate_linux.dll
     
-    - uses: actions/upload-artifact@v3
-      with:
-        name: gmsv_tickrate_linux64.dll
-        path: projects/linux/gmake/x86_64/Release/gmsv_tickrate_linux64.dll
         
       
