@@ -1,11 +1,4 @@
-#include <GarrysMod/Lua/Interface.h>
-#include <GarrysMod/FactoryLoader.hpp>
-#include <GarrysMod/InterfacePointers.hpp>
-
 #include <tickrate.h>
-
-#include <memory>
-
 
 namespace globals
 {

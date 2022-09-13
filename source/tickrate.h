@@ -1,6 +1,12 @@
 #ifndef TICKRATE_H
 # define TICKRATE_H
 
+#include <GarrysMod/Lua/Interface.h>
+#include <GarrysMod/FactoryLoader.hpp>
+#include <GarrysMod/InterfacePointers.hpp>
+
+#include <memory>
+
 typedef void* (*CreateInterfaceFn)(const char* pName, int* pReturnCode);
 
 template< class T, class I = int >
