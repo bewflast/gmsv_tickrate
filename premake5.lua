@@ -12,4 +12,5 @@ include(gmcommon)
 
 CreateWorkspace({name = "tickrate"})
 	CreateProject({serverside = true})
+		IncludeHelpers()
 		IncludeHelpersExtended()
