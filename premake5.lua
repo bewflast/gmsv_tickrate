@@ -16,5 +16,5 @@ files { _SCRIPT_DIR  .. "/include/**.h" }
 
 CreateWorkspace({name = "tickrate"})
 	CreateProject({serverside = true})
-		IncludeHelpers()
 		IncludeHelpersExtended()
+		IncludeScanning()
