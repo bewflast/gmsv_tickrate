@@ -31,7 +31,7 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: gmsv_tickrate_win32.dll
-        path: projects/windows/vs2019/x86/ReleaseWithSymbols /gmsv_tickrate_win32.dll
+        path: projects/windows/vs2019/x86/ReleaseWithSymbols/gmsv_tickrate_win32.dll
         
     - name: Build 64
       run: |
@@ -41,7 +41,7 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: gmsv_tickrate_win64.dll
-        path: projects/windows/vs2019/x86_64/ReleaseWithSymbols /gmsv_tickrate_win64.dll
+        path: projects/windows/vs2019/x86_64/ReleaseWithSymbols/gmsv_tickrate_win64.dll
     
         
         
