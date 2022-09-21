@@ -2,6 +2,6 @@
 # define TICKRATE_H
 
 # include <GarrysMod/Lua/Interface.h>
-# include "utils.h"
+# include "utils.hpp"
 
 #endif

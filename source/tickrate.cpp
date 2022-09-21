@@ -1,4 +1,4 @@
-#include "tickrate.h"
+#include "tickrate.hpp"
 
 LUA_FUNCTION(HostFrameTime)
 {
